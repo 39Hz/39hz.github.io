@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Posts on My Awesome Blog</title>
-    <link>http://localhost:49246/posts/</link>
+    <link>http://localhost:50125/posts/</link>
     <description>Recent content in Posts on My Awesome Blog</description>
-    <generator>Hugo -- 0.140.2</generator>
+    <generator>Hugo -- 0.147.3</generator>
     <language>en</language>
     <lastBuildDate>Sun, 01 Oct 2023 00:00:00 +0800</lastBuildDate>
-    <atom:link href="http://localhost:49246/posts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:50125/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>My First Post</title>
-      <link>http://localhost:49246/posts/posts/my-first-post/</link>
+      <link>http://localhost:50125/posts/posts/my-first-post/</link>
       <pubDate>Sun, 01 Oct 2023 00:00:00 +0800</pubDate>
-      <guid>http://localhost:49246/posts/posts/my-first-post/</guid>
+      <guid>http://localhost:50125/posts/posts/my-first-post/</guid>
       <description>&lt;p&gt;Hello world! This is my first blog post using Hugo and PaperMod.&lt;/p&gt;
 &lt;p&gt;I can add more content here, like images or links.&lt;/p&gt;</description>
     </item>
