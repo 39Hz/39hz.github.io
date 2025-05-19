@@ -1,17 +1,17 @@
-baseURL = "https://39hz.github.io/"  # 您的 GitHub Pages URL
-title = "My Awesome Blog"  # 您的博客标题
-theme = "PaperMod"  # 指定主题
+baseURL = "https://39hz.github.io/"  # 鎮ㄧ殑 GitHub Pages URL
+title = "My Awesome Blog"  # 鎮ㄧ殑鍗氬鏍囬
+theme = "PaperMod"  # 鎸囧畾涓婚
 
 [params]
-description = "A simple blog powered by Hugo and PaperMod"  # 博客描述
-author = "39Hz"  # 您的名字
+description = "A simple blog powered by Hugo and PaperMod"  # 鍗氬鎻忚堪
+author = "39Hz"  # 鎮ㄧ殑鍚嶅瓧
 
-# PaperMod 特定配置
+# PaperMod 鐗瑰畾閰嶇疆
 [params.homeInfoParams]
 Title = "Hi there ?"
 Content = "Welcome to my blog"
 
-# 菜单配置
+# 鑿滃崟閰嶇疆
 [[menu.main]]
 identifier = "posts"
 name = "Posts"
