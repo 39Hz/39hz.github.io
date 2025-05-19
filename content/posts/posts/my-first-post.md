@@ -1,7 +1,7 @@
 ---
 title: "My First Post"
-date: 2023-10-01T00:00:00+08:00  # ·¢²¼ÈÕÆÚ
-draft: false  # ÉèÖÃÎª true ±íÊ¾²İ¸å
+date: 2023-10-01T00:00:00+08:00  # å‘å¸ƒæ—¥æœŸ
+draft: false  # è®¾ç½®ä¸º true è¡¨ç¤ºè‰ç¨¿
 tags: ["hugo", "blog"]
 ---
 
