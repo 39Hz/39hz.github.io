@@ -10,4 +10,3 @@ cover:
   relative: false
 ---
 
-# Git Commands Visualized - Git 命令可视化指南
