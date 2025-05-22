@@ -1,11 +1,11 @@
-# Hugo Éú³ÉµÄÎÄ¼ş
-public/  # ºöÂÔ¹¹½¨Êä³öµÄ public Ä¿Â¼
-resources/  # Hugo ×ÊÔ´»º´æÄ¿Â¼
-.hugo_build.lock  # Hugo ¹¹½¨ËøÎÄ¼ş
+# Hugo ç”Ÿæˆçš„æ–‡ä»¶
+public/  # å¿½ç•¥æ„å»ºè¾“å‡ºçš„ public ç›®å½•
+resources/  # Hugo èµ„æºç¼“å­˜ç›®å½•
+.hugo_build.lock  # Hugo æ„å»ºé”æ–‡ä»¶
 
-# ÆäËû³£¼ûºöÂÔÏî
-.DS_Store  # macOS ÏµÍ³ÎÄ¼ş
-Thumbs.db  # Windows ÏµÍ³ËõÂÔÍ¼ÎÄ¼ş
-*.log  # ÈÕÖ¾ÎÄ¼ş
-*.tmp  # ÁÙÊ±ÎÄ¼ş
-node_modules/  # Èç¹ûÄúÊ¹ÓÃ npm »òÆäËûÒÀÀµ¹ÜÀíÆ÷
+# å…¶ä»–å¸¸è§å¿½ç•¥é¡¹
+.DS_Store  # macOS ç³»ç»Ÿæ–‡ä»¶
+Thumbs.db  # Windows ç³»ç»Ÿç¼©ç•¥å›¾æ–‡ä»¶
+*.log  # æ—¥å¿—æ–‡ä»¶
+*.tmp  # ä¸´æ—¶æ–‡ä»¶
+node_modules/  # å¦‚æœæ‚¨ä½¿ç”¨ npm æˆ–å…¶ä»–ä¾èµ–ç®¡ç†å™¨
