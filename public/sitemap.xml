@@ -2,24 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:50125/tags/blog/</loc>
+    <loc>http://localhost:1313/categories/</loc>
+    <lastmod>2025-05-22T12:00:00+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/git/</loc>
+    <lastmod>2025-05-22T12:00:00+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/git-commands-visualized/</loc>
+    <lastmod>2025-05-22T12:00:00+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/</loc>
+    <lastmod>2025-05-22T12:00:00+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2025-05-22T12:00:00+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/%E6%95%99%E7%A8%8B/</loc>
+    <lastmod>2025-05-22T12:00:00+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/blog/</loc>
     <lastmod>2023-10-01T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:50125/</loc>
+    <loc>http://localhost:1313/</loc>
     <lastmod>2023-10-01T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:50125/tags/hugo/</loc>
+    <loc>http://localhost:1313/tags/hugo/</loc>
     <lastmod>2023-10-01T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:50125/posts/posts/my-first-post/</loc>
+    <loc>http://localhost:1313/posts/my-first-post/</loc>
     <lastmod>2023-10-01T00:00:00+08:00</lastmod>
-  </url><url>
-    <loc>http://localhost:50125/posts/</loc>
-    <lastmod>2023-10-01T00:00:00+08:00</lastmod>
-  </url><url>
-    <loc>http://localhost:50125/tags/</loc>
-    <lastmod>2023-10-01T00:00:00+08:00</lastmod>
-  </url><url>
-    <loc>http://localhost:50125/categories/</loc>
   </url>
 </urlset>

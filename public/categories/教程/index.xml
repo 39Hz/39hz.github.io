@@ -1,26 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on My Awesome Blog</title>
-    <link>http://localhost:1313/posts/</link>
-    <description>Recent content in Posts on My Awesome Blog</description>
+    <title>教程 on My Awesome Blog</title>
+    <link>http://localhost:1313/categories/%E6%95%99%E7%A8%8B/</link>
+    <description>Recent content in 教程 on My Awesome Blog</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Thu, 22 May 2025 12:00:00 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/categories/%E6%95%99%E7%A8%8B/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Git Commands Visualized - Git 命令可视化指南</title>
       <link>http://localhost:1313/posts/git-commands-visualized/</link>
       <pubDate>Thu, 22 May 2025 12:00:00 +0800</pubDate>
       <guid>http://localhost:1313/posts/git-commands-visualized/</guid>
       <description>&lt;h1 id=&#34;git-commands-visualized---git-命令可视化指南&#34;&gt;Git Commands Visualized - Git 命令可视化指南&lt;/h1&gt;</description>
-    </item>
-    <item>
-      <title>My First Post</title>
-      <link>http://localhost:1313/posts/my-first-post/</link>
-      <pubDate>Sun, 01 Oct 2023 00:00:00 +0800</pubDate>
-      <guid>http://localhost:1313/posts/my-first-post/</guid>
-      <description>&lt;p&gt;Hello world! This is my first blog post using Hugo and PaperMod.&lt;/p&gt;&#xA;&lt;p&gt;I can add more content here, like images or links.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
