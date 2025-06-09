@@ -2,10 +2,24 @@
 public/  # 忽略构建输出的 public 目录
 resources/  # Hugo 资源缓存目录
 .hugo_build.lock  # Hugo 构建锁文件
+hugo_stats.json # Hugo 生成的统计文件
+hugo.log # Hugo 日志文件
+
+# Hugo 二进制文件 (如果直接放在项目根目录)
+hugo.exe
+hugo.linux
+hugo.darwin
 
 # 其他常见忽略项
 .DS_Store  # macOS 系统文件
 Thumbs.db  # Windows 系统缩略图文件
+ehthumbs.db # Windows 特有文件
+Desktop.ini # Windows 特有文件
+.localized # macOS 特有文件
+.Trashes # macOS 特有文件
+._* # macOS 特有文件
 *.log  # 日志文件
 *.tmp  # 临时文件
 node_modules/  # 如果您使用 npm 或其他依赖管理器
+assets/jsconfig.json # Hugo 生成的 JS 配置文件
+dist/ # 可能的构建输出目录
