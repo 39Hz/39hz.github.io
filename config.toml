@@ -1,25 +1,44 @@
-baseURL = "https://39hz.github.io/"  # 您的 GitHub Pages URL
-title = "My Awesome Blog"  # 您的博客标题
-theme = "PaperMod"  # 指定主题
+baseURL: "https://39hz.github.io/"
+languageCode: "zh-CN"
+defaultContentLanguage: zh
+title: "Whisper in 39Hz"
+theme: "PaperMod"
 
-[params]
-description = "A simple blog powered by Hugo and PaperMod"  # 博客描述
-author = "39Hz"  # 您的名字
+params:
+  env: production
+  description: "Soft Thoughts. Deep Signals. 在喧嚣之外，听见轻语。"
+  author: "39Hz"
+  ShowReadingTime: true
+  ShowShareButtons: true
+  ShowCodeCopyButtons: true
+  ShowToc: true
+  ShowPostNavLinks: true
+  defaultTheme: auto
+  disableThemeToggle: false
+  DateFormat: "2006-01-02"
+  UseHugoToc: true
 
-# PaperMod 特定配置
-[params.homeInfoParams]
-Title = "Hi there ?"
-Content = "Welcome to my blog"
+  homeInfoParams:
+    Title: "Whisper in 39Hz"
+    Content: |
+      Soft Thoughts. Deep Signals.
+      在喧嚣之外，听见轻语。
 
-# 菜单配置
-[[menu.main]]
-identifier = "posts"
-name = "Posts"
-url = "/posts/"
-weight = 10
-
-[[menu.main]]
-identifier = "about"
-name = "About"
-url = "/about/"
-weight = 20
+menu:
+  main:
+    - identifier: about
+      name: 关于
+      url: /about/
+      weight: 10
+    - identifier: posts
+      name: 文章
+      url: /posts/
+      weight: 20
+    - identifier: projects
+      name: 项目
+      url: /projects/
+      weight: 30
+    - identifier: tags
+      name: 标签
+      url: /tags/
+      weight: 40
