@@ -45,3 +45,7 @@ theme = "PaperMod"
   name = "标签"
   url = "/tags/"
   weight = 40
+
+[services]
+  [services.googleAnalytics]
+    id = "G-10HT2BHMV3"
