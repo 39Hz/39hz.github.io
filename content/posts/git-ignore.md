@@ -1,12 +1,12 @@
 ---
 title: "Git 仓库整理术：.gitignore 不完全指南"
-date: 2025-06-11T12:00:00+08:00
+date: 2025-06-10T12:00:00+08:00
 author: "39Hz"
 tags: ["Git"]
 categories: ["教程"]
 cover:
   image: "/images/git-ignore/git-ignore-cover.png"
-  caption: "Git Commands Visualized"
+  caption: "Git gitignore"
   relative: false
 ---
 
