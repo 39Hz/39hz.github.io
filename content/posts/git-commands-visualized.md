@@ -5,7 +5,7 @@ author: "39Hz"
 tags: ["Git"]
 categories: ["教程"]
 cover:
-  image: "/images/git-commands-visualized-cover.png"
+  image: "/images/git-commands-visualized/git-commands-visualized-cover.png"
   caption: "Git Commands Visualized"
   relative: false
 ---
@@ -32,7 +32,7 @@ cover:
 
 当你的目标分支（例如 `master`）在你的特性分支（例如 `dev`）创建之后，没有产生任何新的提交时，就可以进行**快进合并**。在这种情况下，Git 有点……*小聪明*，它会首先尝试最简单的选项：快进！这种类型的合并不会创建新的提交记录，而是直接将待合并分支（`dev`）上的提交“快速移动”到当前分支（`master`）的顶端 🥳。
 
-![快进合并](/images/git-commands-visualized-merge-ff.gif)
+![快进合并](/images/git-commands-visualized/git-commands-visualized-merge-ff.gif)
 
 完美！现在 `master` 分支就拥有了 `dev` 分支上的所有更改。那么，**非快进合并**又是什么情况呢？
 
@@ -42,7 +42,7 @@ cover:
 
 通过非快进合并，Git 会在你的活动分支（`master`）上创建一个新的*合并提交*。这个特殊的提交有两个父提交：一个指向当前的活动分支，另一个指向我们想要合并进来的分支！
 
-![非快进合并](/images/git-commands-visualized-merge-no-ff.gif)
+![非快进合并](/images/git-commands-visualized/git-commands-visualized-merge-no-ff.gif)
 
 干得漂亮，一次完美的合并！🎉 `master` 分支现在包含了我们在 `dev` 分支上所做的所有更改，并且保留了各自独立开发的历史。
 
@@ -52,13 +52,13 @@ cover:
 
 在这种情况下，Git 会暂停合并过程，并请求你介入，帮助决定保留哪个版本的更改！假设在我们的 `master` 和 `dev` 两个分支中，我们都编辑了 `README.md` 文件的第一行。
 
-![冲突](/images/git-commands-visualized-conflict.png)
+![冲突](/images/git-commands-visualized/git-commands-visualized-conflict.png)
 
 如果我们想将 `dev` 分支合并到 `master` 分支，Git 就会提示合并冲突：你希望标题是 `Hello!` 还是 `Hey!` 呢？
 
 当尝试合并时，Git 会在冲突的文件中用特殊标记标示出冲突的具体位置。我们可以手动编辑这些文件，移除我们不想要的更改，保留需要的版本，然后保存文件。完成冲突解决后，重新 `git add` 已更改的文件，最后执行 `git commit` 来完成这次合并 🥳。
 
-![合并冲突](/images/git-commands-visualized-merge-conflict.gif)
+![合并冲突](/images/git-commands-visualized/git-commands-visualized-merge-conflict.gif)
 
 太棒了！尽管合并冲突有时确实很烦人，但它们的存在是完全合理的：Git 不应该替我们*主观臆断*想要保留哪些更改。
 
@@ -70,7 +70,7 @@ cover:
 
 `git rebase` 的核心思想是：它会*复制*当前分支（例如 `dev`）的提交，然后将这些复制的提交逐个应用到你指定的目标分支（例如 `master`）的顶部。
 
-![变基](/images/git-commands-visualized-rebase.gif)
+![变基](/images/git-commands-visualized/git-commands-visualized-rebase.gif)
 
 搞定！我们现在 `dev` 分支上就拥有了 `master` 分支上的所有最新更改，并且 `dev` 分支的提交历史看起来像是紧接着 `master` 分支之后开发的，形成了一条直线 🎊。
 
@@ -100,11 +100,11 @@ cover:
 
 太棒了！这样，我们就能完全掌控我们的提交历史。例如，如果我们想删除某个不再需要的提交，只需在交互式界面中将其标记为 `drop`。
 
-![变基-删除提交](/images/git-commands-visualized-rebase-drop.gif)
+![变基-删除提交](/images/git-commands-visualized/git-commands-visualized-rebase-drop.gif)
 
 或者，如果我们想将多个相关的微小提交（比如一些 "WIP" 提交或小的修复）压缩成一个更有意义的提交，以保持历史记录的整洁，`squash` 或 `fixup` 将是你的好帮手！
 
-![变基-合并提交](/images/git-commands-visualized-rebase-squash.gif)
+![变基-合并提交](/images/git-commands-visualized/git-commands-visualized-rebase-squash.gif)
 
 交互式变基赋予了你对提交进行精细化管理的强大能力，即使是在你当前的活动分支上，也能助你打造一个干净、专业的提交历史！
 
@@ -122,7 +122,7 @@ cover:
 
 假设我们不想保留添加了 `style.css` 文件的提交 `9e78i`，也不想保留添加了 `index.js` 文件的提交 `035cc`。但是，我们确实想保留新添加的 `style.css` 和 `index.js` 文件本身的内容，并可能将它们合并成一个新的提交。这是软重置的完美用例。
 
-![软重置](/images/git-commands-visualized-reset-soft.gif)
+![软重置](/images/git-commands-visualized/git-commands-visualized-reset-soft.gif)
 
 执行软重置后，当你输入 `git status` 时，你会看到先前提交所做的所有更改都已暂存。这非常棒，因为这意味着我们可以修改这些文件的内容，或者将它们合并成一个单一的、更完善的提交！
 
@@ -132,7 +132,7 @@ cover:
 
 **警告：`git reset --hard` 是一个具有破坏性的操作，它会丢弃所有未提交的更改以及指定提交之后的所有提交内容。请谨慎使用！**
 
-![硬重置](/images/git-commands-visualized-reset-hard.gif)
+![硬重置](/images/git-commands-visualized/git-commands-visualized-reset-hard.gif)
 
 Git 已经彻底丢弃了在 `9e78i` 和 `035cc` 上引入的更改，并将仓库的状态（包括工作目录）重置回了提交 `ec5be` 时的样子。
 
@@ -146,7 +146,7 @@ Git 已经彻底丢弃了在 `9e78i` 和 `035cc` 上引入的更改，并将仓�
 
 假设提交 `ec5be` 添加了一个 `index.js` 文件。后来，我们意识到我们实际上不想要这个提交引入的更改了！让我们来 `revert` 提交 `ec5be`。
 
-![还原](/images/git-commands-visualized-revert.gif)
+![还原](/images/git-commands-visualized/git-commands-visualized-revert.gif)
 
 完美！新的提交 `9e78i` (这是一个示例哈希值) 准确地还原了由提交 `ec5be` 所引入的更改（例如，如果 `ec5be` 是添加文件，则 `9e78i` 会删除该文件）。执行 `git revert` 对于撤销某个特定提交非常有用，因为它不会修改分支的现有历史记录，而是向前追加一个新的“撤销”提交，这对于已经推送到共享仓库的提交来说是更安全的选择。
 
@@ -158,7 +158,7 @@ Git 已经彻底丢弃了在 `9e78i` 和 `035cc` 上引入的更改，并将仓�
 
 假设 `dev` 分支上的提交 `76d12` 对 `index.js` 文件做了一个重要的修复或添加了一个小功能，而我们希望这个更改也能够应用到 `master` 分支上。但我们不想要 `dev` 分支上的所有其他更改，只关心这一个特定的提交！
 
-![拣选](/images/git-commands-visualized-cherry-pick.gif)
+![拣选](/images/git-commands-visualized/git-commands-visualized-cherry-pick.gif)
 
 酷！现在 `master` 分支上也拥有了原先在 `dev` 分支上由提交 `76d12` 引入的更改，并且它是作为一个全新的提交出现在 `master` 分支上的。
 
@@ -184,7 +184,7 @@ Git 已经彻底丢弃了在 `9e78i` 和 `035cc` 上引入的更改，并将仓�
 
 太棒了！执行 `git pull` 后，我们的本地分支现在与远程分支完全同步，并拥有了所有最新的更改！🤩 （注意：如果本地有未提交的更改与拉取的更改冲突，或者远程历史与本地历史有分歧，`pull` 可能会遇到合并冲突或需要你解决的问题。）
 
-![拉取](/images/git-commands-visualized-pull.gif)
+![拉取](/images/git-commands-visualized/git-commands-visualized-pull.gif)
 
 太棒了，我们现在与远程分支完全同步，并拥有所有最新的更改！🤩
 
@@ -196,13 +196,13 @@ Git 已经彻底丢弃了在 `9e78i` 和 `035cc` 上引入的更改，并将仓�
 
 `git reflog` (Reference Log, 引用日志) 是一个非常有用的命令，它可以显示一份记录了 `HEAD` 和你的分支指针在过去一段时间内所有移动的日志！这包括了合并、重置、还原、提交、切换分支等等——基本上是你对本地仓库所做的任何会改变分支顶端指向的操作。
 
-![引用日志](/images/git-commands-visualized-reflog.gif)
+![引用日志](/images/git-commands-visualized/git-commands-visualized-reflog.gif)
 
 如果你不小心执行了一个错误的操作（比如一次错误的 `reset`），你可以查阅 `reflog`，找到在那个错误操作之前的状态（通常表示为 `HEAD@{<number>}`），然后使用 `git reset` 命令（例如 `git reset --hard HEAD@{<number>}`）将你的分支恢复到那个安全的状态，从而轻松地撤销错误！
 
 假设我们实际上不想合并 `origin` 分支。当我们执行 `git reflog` 命令时，我们看到合并前仓库的状态位于 `HEAD@{1}`。那我们就执行 `git reset --hard HEAD@{1}`，将 `HEAD` 指回它在 `HEAD@{1}` 时的位置！
 
-![引用日志-重置](/images/git-commands-visualized-reflog-reset.gif)
+![引用日志-重置](/images/git-commands-visualized/git-commands-visualized-reflog-reset.gif)
 
 我们可以看到，最新的操作（这次是 `reset`）也已经被记录到了 `reflog` 的顶部！`git reflog` 真的是 Git 中的“后悔药”。
 
