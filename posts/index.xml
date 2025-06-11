@@ -1,4 +1,33 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Posts on Whisper in 39Hz</title><link>https://39hz.github.io/posts/</link><description>Recent content in Posts on Whisper in 39Hz</description><generator>Hugo -- 0.147.8</generator><language>zh-CN</language><lastBuildDate>Thu, 22 May 2025 12:00:00 +0800</lastBuildDate><atom:link href="https://39hz.github.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Git Commands Visualized - Git 命令可视化指南</title><link>https://39hz.github.io/posts/git-commands-visualized/</link><pubDate>Thu, 22 May 2025 12:00:00 +0800</pubDate><guid>https://39hz.github.io/posts/git-commands-visualized/</guid><description>&lt;blockquote>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Posts on Whisper in 39Hz</title><link>https://39hz.github.io/posts/</link><description>Recent content in Posts on Whisper in 39Hz</description><generator>Hugo -- 0.147.8</generator><language>zh-CN</language><lastBuildDate>Tue, 10 Jun 2025 12:00:00 +0800</lastBuildDate><atom:link href="https://39hz.github.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Git 仓库整理术：.gitignore 不完全指南</title><link>https://39hz.github.io/posts/git-ignore/</link><pubDate>Tue, 10 Jun 2025 12:00:00 +0800</pubDate><guid>https://39hz.github.io/posts/git-ignore/</guid><description>&lt;h1 id="git-仓库整理术gitignore-不完全指南">Git 仓库整理术：.gitignore 不完全指南&lt;/h1>
+&lt;p>&lt;img alt="Git-Logo" loading="lazy" src="https://git-scm.com/images/logos/downloads/Git-Logo-2Color.png">{width=50%}&lt;/p>
+&lt;p>作为开发者，我们每天都在和 Git 打交道。一个干净、清晰的提交历史是高效协作和维护项目的基础。但你是否遇到过这样的情况：&lt;/p>
+&lt;ul>
+&lt;li>不小心把 &lt;code>node_modules&lt;/code> 文件夹提交到了仓库，导致仓库体积暴增？&lt;/li>
+&lt;li>&lt;code>console.log&lt;/code> 的调试文件、IDE 的配置文件（如 &lt;code>.vscode/&lt;/code> 或 &lt;code>.idea/&lt;/code>）也出现在了提交记录里？&lt;/li>
+&lt;li>包含了敏感信息（如 API 密钥）的 &lt;code>.env&lt;/code> 文件被公开到了 GitHub？&lt;/li>
+&lt;li>MacOS 上讨厌的 &lt;code>.DS_Store&lt;/code> 文件也混入了版本控制？&lt;/li>
+&lt;/ul>
+&lt;p>如果答案是肯定的，那么你需要立刻了解并使用 &lt;code>.gitignore&lt;/code> 文件。它是一个简单但极其强大的工具，能帮助你从源头上解决这些问题。&lt;/p>
+&lt;h2 id="什么是-gitignore">什么是 .gitignore？&lt;/h2>
+&lt;p>&lt;code>.gitignore&lt;/code> 是一个纯文本文件，它的作用是告诉 Git &lt;strong>哪些文件或目录应该被忽略，不纳入版本控制&lt;/strong>。&lt;/p>
+&lt;p>当你执行 &lt;code>git add .&lt;/code> 时，Git 会检查当前目录下是否存在 &lt;code>.gitignore&lt;/code> 文件，并根据其中的规则来决定哪些文件不会被暂存（staged）。&lt;/p>
+&lt;h3 id="为什么它如此重要">为什么它如此重要？&lt;/h3>
+&lt;ol>
+&lt;li>&lt;strong>保持仓库整洁&lt;/strong>：避免提交自动生成的文件、日志文件、编译产物等。这让你的提交历史专注于真正的代码变更。&lt;/li>
+&lt;li>&lt;strong>减小仓库体积&lt;/strong>：像 &lt;code>node_modules&lt;/code> 这样的目录包含了成千上万个文件，将其排除能极大地减小仓库的体积，加快克隆、拉取的速度。&lt;/li>
+&lt;li>&lt;strong>避免安全风险&lt;/strong>：防止将包含密码、API 密钥或其他敏感信息的配置文件（如 &lt;code>.env&lt;/code>）意外提交到公共仓库。&lt;/li>
+&lt;li>&lt;strong>减少合并冲突&lt;/strong>：忽略针对个人开发环境的配置文件（如 IDE 设置），可以避免团队成员之间因此产生不必要的合并冲突。&lt;/li>
+&lt;/ol>
+&lt;p>##　最佳实践和技巧&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>尽早创建: 在项目初始化 (git init) 后就立即创建 .gitignore 文件，这样可以从一开始就避免错误提交。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>使用模板: GitHub 维护了一个非常全面的 &lt;a href="https://github.com/github/gitignore">gitignore 模板仓库&lt;/a>，涵盖了几乎所有的编程语言和框架。你可以直接从中找到适合你项目的模板，并根据需要进行修改。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>配置全局 .gitignore: 有些文件（如操作系统文件或编辑器配置）是你希望在所有项目中都忽略的。你可以配置一个全局的 .gitignore 文件。&lt;/p></description></item><item><title>Git Commands Visualized - Git 命令可视化指南</title><link>https://39hz.github.io/posts/git-commands-visualized/</link><pubDate>Thu, 22 May 2025 12:00:00 +0800</pubDate><guid>https://39hz.github.io/posts/git-commands-visualized/</guid><description>&lt;blockquote>
 &lt;p>&lt;a href="https://dev.to/lydiahallie/cs-visualized-useful-git-commands-37p1">🔗 原文链接 🌳🚀 CS Visualized: Useful Git Commands&lt;/a>&lt;/p>&lt;/blockquote>
 &lt;hr>
 &lt;p>尽管 Git 是一个非常强大的工具，但我想大多数人都会同意，它的命令行有时也可能……像一场突如其来的噩梦 😐。别担心！我一直觉得，在脑海中将 Git 操作可视化对于理解其运作机制非常有帮助：当我执行某个命令时，分支是如何交互的？它将如何影响提交历史？为什么当我对 &lt;code>master&lt;/code> 分支执行了 &lt;code>hard reset&lt;/code>、&lt;code>force push&lt;/code> 到 &lt;code>origin&lt;/code> 并且 &lt;code>rimraf&lt;/code> 掉了 &lt;code>.git&lt;/code> 文件夹后，我的同事会崩溃大哭呢？（温馨提示：请勿在共享仓库轻易尝试最后那部分操作！）&lt;/p>
